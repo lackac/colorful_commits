@@ -1,0 +1,14 @@
+{
+  "name": "Colorful Commits"
+, "description": "Color GitHub commits using the first six characters of the commit hash"
+, "version": "1.0"
+, "icons": {
+    "16":  "icon16.png"
+  , "48":  "icon48.png"
+  , "128": "icon128.png" }
+, "homepage_url": "https://github.com/lackac/colorful_commits"
+, "content_scripts": [ {
+    "matches": [ "http://github.com/*", "https://github.com/*" ]
+  , "js": [ "colorful_commits.user.js" ]
+  } ]
+}
